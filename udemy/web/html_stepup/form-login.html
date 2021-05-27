@@ -8,8 +8,16 @@
 </head>
 <body>
   <form action="#" method="POST">
+    <!-- type属性はテキスト、一行フィールドの為改行は出来ない。 -->
+    <!-- name属性で名前をつけることで、サーバー側のプログラムが送信されてきたデータが何かを判別することが出来るようになる -->
+    <!-- placeholder属性をつけると、入力欄に説明のテキストを用意することができる。ユーザーが入力しようとすると説明は消える -->
     <input type="text" name="username" placeholder="ユーザーネーム">
+
+    <!-- type属性はpassword。ブラウザ上で見た時に入力した文字や数字が[・・・・・]と隠した状態で表示される -->
     <input type="password" name="password" placeholder="パスワード">
+
+    <!-- type属性はsubmit。フォームを送信するためのボタンになる。 -->
+    <!-- valueで ボタンのラベルのテキストが指定できる-->
     <input type="submit" value="ログイン">
   </form>
 </body>
