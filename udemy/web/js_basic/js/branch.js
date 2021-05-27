@@ -6,12 +6,12 @@
 // 変数xの値が、100以上だったら、'100以上の値です'とコンソールに表示。
 // 変数xが100未満だったら、'100未満の値です'とコンソールに表示
 // var x = 100;
-var x = 99;
-if (x>=100){
-  console.log('100以上の値です');
-}else {
-  console.log('100未満の値です');
-}
+// var x = 99;
+// if (x>=100){
+//   console.log('100以上の値です');
+// }else {
+//   console.log('100未満の値です');
+// }
 
 // >= のところは、比較演算子といいます。
 // 主な比較演算子
@@ -26,24 +26,37 @@ if (x>=100){
 // 80点以上 B
 // 60点以上 C
 // 60点未満 D
-var y = 59;
-if (y >= 90){
-  console.log('A');
-}else if (y >= 80) {
-  console.log('B');
-}else if (y>= 60){
-  console.log('C');
-}else{
-  console.log('D');
-}
-
-
-
-
-
+// var y = 59;
+// if (y >= 90){
+//   console.log('A');
+// }else if (y >= 80) {
+//   console.log('B');
+// }else if (y>= 60){
+//   console.log('C');
+// }else{
+//   console.log('D');
+// }
 
 // switch
+// 対象となる一つの値を様々な値と比較して一致するのかを調べたいときに使うと便利
 // 例題変数nの値が1だったら、「数値は1です」とコンソールに表示。
 // 例題変数nの値が2だったら、「数値は2です」とコンソールに表示。
 // 例題変数nの値が3だったら、「数値は3です」とコンソールに表示。
 // 例題変数nの値が上記以外だったら、「範囲外です」とコンソールに表示
+
+var n = 3;
+switch(n){
+  case 1:
+    console.log('数値は１です');
+    break
+  case 2:
+      console.log('数値は２です');
+    break
+  case 3:
+      console.log('数値は３です');
+      break
+  default:
+    console.log('範囲外です');
+    break
+}
+// breakは原則として各case毎に設置する
